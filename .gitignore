@@ -1,0 +1,11 @@
+build/
+dist/
+build.log
+.rebuild
+.buildmode
+.DS_Store
+__pycache__/
+.rebuild
+.buildmode
+.dockdiag
+.smoketest
