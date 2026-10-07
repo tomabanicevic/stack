@@ -1,12 +1,20 @@
+<a href="https://tomabanicevic.github.io/stack/"><img src="docs/banner.webp" alt="Stack — toutes tes apps, un seul clic"></a>
+
 <p align="center">
-  <img src="Resources/AppIcon-1024.png" width="160" alt="Stack icon">
+  <a href="https://github.com/tomabanicevic/stack/releases/latest/download/Stack-1.4.0.dmg"><img src="https://img.shields.io/badge/T%C3%A9l%C3%A9charger-Stack%201.4-211c52?style=for-the-badge&logo=apple&logoColor=white" alt="Télécharger Stack 1.4"></a>
+  <a href="https://tomabanicevic.github.io/stack/"><img src="https://img.shields.io/badge/Voir%20le%20site-6f4ef2?style=for-the-badge" alt="Voir le site"></a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/macOS-13%2B-ece6ff?style=flat-square&labelColor=211c52" alt="macOS 13 ou plus récent">
+  <img src="https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universel-ece6ff?style=flat-square&labelColor=211c52" alt="Apple Silicon et Intel">
+  <img src="https://img.shields.io/badge/Swift-SwiftUI%20%2B%20AppKit-ece6ff?style=flat-square&labelColor=211c52" alt="SwiftUI et AppKit">
+  <img src="https://img.shields.io/badge/licence-MIT-ece6ff?style=flat-square&labelColor=211c52" alt="Licence MIT">
 </p>
 
-<h1 align="center">Stack</h1>
-
 <p align="center">
-  <b>Toutes tes apps en un clic, rangées au même endroit.</b> Une petite app Mac native qui ouvre d'un coup toutes les apps que tu utilises ensemble — et qui peut les ranger chez elle pour qu'elles quittent Applications.<br>
-  <i>All your apps in one click, kept in one place — a tiny native Mac launcher that can also house your apps.</i>
+  <b>Toutes tes apps en un clic, rangées au même endroit.</b><br>
+  Une petite app Mac native qui ouvre d'un coup toutes les apps que tu utilises ensemble, et qui peut les ranger chez elle pour qu'elles quittent Applications.<br>
+  <i>All your apps in one click — a tiny native Mac launcher that can also house your apps.</i>
 </p>
 
 ---
@@ -40,7 +48,7 @@ Par défaut, Stack ne copie, ne déplace et ne modifie **aucune** app : il retie
 | Réordonner | Glisse les apps / groupes dans les listes |
 
 ### Installation
-1. Télécharge le dernier `Stack-x.y.z.dmg` dans **[Releases](../../releases)**.
+1. Télécharge **[Stack-1.4.0.dmg](https://github.com/tomabanicevic/stack/releases/latest/download/Stack-1.4.0.dmg)** (toutes les versions dans les **[Releases](../../releases)**).
 2. Ouvre le DMG et glisse **Stack** dans **Applications**.
 3. Premier lancement : Stack n'est pas signé par un compte développeur Apple payant, donc macOS affiche un avertissement.
    Va dans **Réglages Système › Confidentialité et sécurité** et clique **Ouvrir quand même** (une seule fois).
@@ -66,7 +74,7 @@ macOS donne chaque autorisation (Accessibilité, etc.) à **une app précise**. 
 - Apps are referenced by bundle identifier — never moved or modified unless you turn on *Out of Dock* or *In Stack*
 - English & French UI, no network access, no tracking
 
-**Install:** download the DMG from [Releases](../../releases), drag Stack to Applications. On first launch, open **System Settings › Privacy & Security** and click **Open Anyway** (the app is ad-hoc signed, not notarized).
+**Install:** download **[Stack-1.4.0.dmg](https://github.com/tomabanicevic/stack/releases/latest/download/Stack-1.4.0.dmg)**, drag Stack to Applications. On first launch, open **System Settings › Privacy & Security** and click **Open Anyway** (the app is ad-hoc signed, not notarized).
 
 ---
 
@@ -86,7 +94,7 @@ Other scripts:
 ### Publish a release
 Push a tag and GitHub Actions builds the universal DMG and attaches it to a new release:
 ```bash
-git tag v1.0.0 && git push origin v1.0.0
+git tag v1.4.1 && git push origin v1.4.1
 ```
 
 ### Project layout
@@ -94,6 +102,7 @@ git tag v1.0.0 && git push origin v1.0.0
 Sources/        Swift (AppKit + SwiftUI)
 Resources/      Info.plist, icon, translations, DMG background
 scripts/        icon generator, translation checker
+docs/           the website (GitHub Pages)
 build.sh        build / install / DMG
 ci/             GitHub Actions workflow (copied to .github/workflows by build.sh)
 ```
